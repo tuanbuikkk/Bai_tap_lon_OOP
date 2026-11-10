@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">English App</string>
+
+    <!-- Auth -->
+    <string name="login_title">Đăng nhập</string>
+    <string name="register_title">Tạo tài khoản</string>
+    <string name="hint_name">Họ và tên</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="hint_confirm">Xác nhận mật khẩu</string>
+    <string name="action_login">Đăng nhập</string>
+    <string name="action_register">Đăng ký</string>
+    <string name="go_register">Chưa có tài khoản? Đăng ký</string>
+    <string name="go_login">Đã có tài khoản? Đăng nhập</string>
+    <string name="register_success">Đăng ký thành công, hãy đăng nhập</string>
+    <string name="err_name">Tên tối thiểu 2 ký tự</string>
+    <string name="err_email">Email không hợp lệ</string>
+    <string name="err_password_empty">Vui lòng nhập mật khẩu</string>
+    <string name="err_password_rule">Mật khẩu ≥ 8 ký tự, gồm chữ và số</string>
+    <string name="err_confirm">Mật khẩu xác nhận không khớp</string>
+
+    <!-- Home -->
+    <string name="home_greeting">Xin chào, %1$s!</string>
+    <string name="plan_free">Gói hiện tại: FREE</string>
+    <string name="plan_premium">Gói hiện tại: PREMIUM</string>
+    <string name="feature_vocab">Từ vựng</string>
+    <string name="feature_lessons">Bài học</string>
+    <string name="feature_progress">Tiến độ</string>
+    <string name="feature_practice">Bài tập / kiểm tra (Premium)</string>
+    <string name="upgrade_premium">Nâng cấp Premium (30 ngày)</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="need_premium">Chức năng này cần gói Premium</string>
+    <string name="module_not_ready">Module \"%1$s\" chưa được tích hợp</string>
+
+    <!-- Admin -->
+    <string name="admin_title">Bảng điều khiển Admin</string>
+    <string name="admin_total_users">Tổng người dùng</string>
+    <string name="admin_premium_users">Người dùng Premium</string>
+    <string name="admin_manage_users">Quản lý người dùng</string>
+    <string name="users_title">Quản lý người dùng</string>
+    <string name="search_hint">Tìm theo tên hoặc email</string>
+    <string name="empty_users">Không có người dùng nào</string>
+    <string name="action_lock">Khóa</string>
+    <string name="action_unlock">Mở khóa</string>
+    <string name="action_make_admin">Lên ADMIN</string>
+    <string name="action_make_user">Xuống USER</string>
+    <string name="action_delete">Xóa</string>
+    <string name="confirm_delete_title">Xóa người dùng?</string>
+    <string name="confirm_delete_msg">Tài khoản %1$s sẽ bị xóa vĩnh viễn.</string>
+</resources>

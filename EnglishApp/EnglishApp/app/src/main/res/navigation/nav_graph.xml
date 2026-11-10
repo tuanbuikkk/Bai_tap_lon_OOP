@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Nav graph chung. Mỗi thành viên thêm <fragment> + <action> của mình vào đây
+  (hoặc gửi Người 1 gộp) - kiểm tra không trùng android:id.
+  startDestination ở dưới chỉ là mặc định; MainActivity đặt lại khi chạy.
+-->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <!-- Global actions: xóa sạch back stack để không Back về màn Login -->
+    <action
+        android:id="@+id/action_global_login"
+        app:destination="@id/loginFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+    <action
+        android:id="@+id/action_global_home"
+        app:destination="@id/homeFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+    <action
+        android:id="@+id/action_global_adminHome"
+        app:destination="@id/adminHomeFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+
+    <!-- Auth -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.yourteam.englishapp.feature.auth.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.yourteam.englishapp.feature.auth.RegisterFragment"
+        android:label="Register" />
+
+    <!-- Home -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.yourteam.englishapp.feature.home.HomeFragment"
+        android:label="Home" />
+
+    <!-- Admin -->
+    <fragment
+        android:id="@+id/adminHomeFragment"
+        android:name="com.yourteam.englishapp.feature.admin.AdminHomeFragment"
+        android:label="Admin">
+        <action
+            android:id="@+id/action_adminHome_to_userManagement"
+            app:destination="@id/userManagementFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userManagementFragment"
+        android:name="com.yourteam.englishapp.feature.admin.UserManagementFragment"
+        android:label="User management" />
+
+    <!-- ===== Destination của các thành viên khác thêm bên dưới ===== -->
+
+</navigation>

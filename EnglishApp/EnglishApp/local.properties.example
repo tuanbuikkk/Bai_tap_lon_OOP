@@ -1,0 +1,7 @@
+## Copy file này thành local.properties (KHÔNG commit local.properties)
+## Android Studio tự thêm dòng sdk.dir=... vào local.properties
+db.host=10.0.2.2
+db.port=1433
+db.name=EnglishApp
+db.user=app_user
+db.password=MatKhauCuaBan@123
